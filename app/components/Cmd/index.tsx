@@ -1,18 +1,21 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
+import routes from '../../constants/routes.json'
 import { platform } from 'os';
 import { changFreemem } from '../public';
-
+import './index.css'
 const os = require('os');
 const fs = require('fs');
 
 // 仅在 Windows 上。
 const { spawn } = require('child_process');
 const path = require('path');
+
+const baseUrl = path.join(__dirname,'components',"Cmd")
 //读取存储在当前目录下的cmd文件
-const url = path.join(__dirname, 'components/Cmd/my.cmd');
+const url = path.join(__dirname, 'components/Cmd/my.bat');
 //读取强制存储在C盘的txt文件目录
 const urlInfo = 'C:\\cmdInfoUtf8.txt';
-
 
 class Index extends React.Component<any, any> {
   constructor(props: any) {
@@ -52,13 +55,13 @@ class Index extends React.Component<any, any> {
    * cmd方法是基于Node子进程spawn构建，主要是用于调用my.cmd文件，获得一个存储控制台信息的txt，再读取txt内容返回给State，详细看下面的my.cmd文件
    */
   cmd = () => {
-    const ls = spawn(url, []);
+    const ls = spawn(url, [baseUrl,'第二个参数']);
     ls.stdout.on('data', (data: any) => {
       console.log(data.toString());
       this.setState({
         info: {
           ...this.state.info,
-          ipconfig: this.state.info.ipconfig += data.toString()
+          ipconfig: this.state.info.ipconfig += data.toString().replace(/\r\n/g, '<br />')
         }
       });
     });
@@ -97,6 +100,7 @@ class Index extends React.Component<any, any> {
     return (
       <div>
         <ul>
+          <Link to={routes.HELLO}>Hello</Link>
           <li>
             操作平台:
             {info.platform}
@@ -116,13 +120,13 @@ class Index extends React.Component<any, any> {
             主机名:
             {info.hostname}
           </li>
-          <li>
-            网络接口列表：
-            {info.ipconfig}
+          <li >
+            <p dangerouslySetInnerHTML={{ __html: info.ipconfig }} />
+
           </li>
           {/*在React中设置dangerouslySetInnerHTML，保证<br/>起作用*/}
-          <li dangerouslySetInnerHTML={{ __html: info.txt }}>
-
+          <li>
+            <p dangerouslySetInnerHTML={{ __html: info.txt }} />
           </li>
         </ul>
       </div>
