@@ -1,6 +1,7 @@
 @echo off
 chcp 65001
 set cmdInfoName=cmdInfo
+set rootPath='C:'
 echo %1
 rem %1=== baseUrl = path.join(__dirname,'components',"Cmd")
 ipconfig > %1\%cmdInfoName%.txt

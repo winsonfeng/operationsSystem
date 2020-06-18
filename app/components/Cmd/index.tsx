@@ -66,6 +66,7 @@ class Index extends React.Component<any, any> {
       });
     });
     ls.on('close', (code: number) => {
+      this.readTxt();
       console.log(`子进程退出，使用退出码 ${code}`);
     });
   };
@@ -92,7 +93,6 @@ class Index extends React.Component<any, any> {
   // 实测用ReactHooks不行，所以才用了原生的React.Component
   componentDidMount() {
     this.cmd();
-    this.readTxt();
   }
 
   render() {
