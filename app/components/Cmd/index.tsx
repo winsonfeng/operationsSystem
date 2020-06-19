@@ -4,6 +4,8 @@ import routes from '../../constants/routes.json'
 import { platform } from 'os';
 import { changFreemem } from '../public';
 import './index.css'
+import firewall from './Firewall'
+
 const os = require('os');
 const fs = require('fs');
 
@@ -16,6 +18,7 @@ const baseUrl = path.join(__dirname,'components',"Cmd")
 const url = path.join(__dirname, 'components/Cmd/my.bat');
 //读取强制存储在C盘的txt文件目录
 const urlInfo = 'C:\\cmdInfoUtf8.txt';
+
 
 class Index extends React.Component<any, any> {
   constructor(props: any) {
@@ -85,13 +88,14 @@ class Index extends React.Component<any, any> {
           txt: dirent.toString().replace(/\r\n/g, '<br />')
         }
       });
-      console.log(this.state.info.txt);
+      // console.log(this.state.info.txt);
     });
   };
 
   //这里要在componentDidMount调用方法，不能在render中调用,不然会无限循环渲染，
   // 实测用ReactHooks不行，所以才用了原生的React.Component
   componentDidMount() {
+    firewall()
     this.cmd();
   }
 
