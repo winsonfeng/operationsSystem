@@ -1,0 +1,241 @@
+﻿{
+    "CimClass":  {
+                     "CimSuperClassName":  "CIM_ManagedElement",
+                     "CimSuperClass":  {
+                                           "CimSuperClassName":  null,
+                                           "CimSuperClass":  null,
+                                           "CimClassProperties":  "Caption Description ElementName InstanceID",
+                                           "CimClassQualifiers":  "Abstract = True locale = 1033 UMLPackagePath = \"CIM::Core::CoreElements\"",
+                                           "CimClassMethods":  "",
+                                           "CimSystemProperties":  "Microsoft.Management.Infrastructure.CimSystemProperties"
+                                       },
+                     "CimClassProperties":  [
+                                                "Caption",
+                                                "Description",
+                                                "ElementName",
+                                                "InstanceID",
+                                                "AllowInboundRules",
+                                                "AllowLocalFirewallRules",
+                                                "AllowLocalIPsecRules",
+                                                "AllowUnicastResponseToMulticast",
+                                                "AllowUserApps",
+                                                "AllowUserPorts",
+                                                "DefaultInboundAction",
+                                                "DefaultOutboundAction",
+                                                "DisabledInterfaceAliases",
+                                                "Enabled",
+                                                "EnableStealthModeForIPsec",
+                                                "LogAllowed",
+                                                "LogBlocked",
+                                                "LogFileName",
+                                                "LogIgnored",
+                                                "LogMaxSizeKilobytes",
+                                                "Name",
+                                                "NotifyOnListen"
+                                            ],
+                     "CimClassQualifiers":  [
+                                                "UMLPackagePath = \"CIM::Core::CoreElements\"",
+                                                "ClassVersion = \"1.0.0\"",
+                                                "dynamic = True",
+                                                "locale = 1033",
+                                                "provider = \"wfascim\""
+                                            ],
+                     "CimClassMethods":  [
+
+                                         ],
+                     "CimSystemProperties":  {
+                                                 "Namespace":  "root/standardcimv2",
+                                                 "ServerName":  "DESKTOP-IL43F2D",
+                                                 "ClassName":  "MSFT_NetFirewallProfile",
+                                                 "Path":  null
+                                             }
+                 },
+    "CimInstanceProperties":  [
+                                  {
+                                      "Name":  "Caption",
+                                      "Value":  null,
+                                      "CimType":  14,
+                                      "Flags":  "Property, ReadOnly, NotModified, NullValue",
+                                      "IsValueModified":  false
+                                  },
+                                  {
+                                      "Name":  "Description",
+                                      "Value":  null,
+                                      "CimType":  14,
+                                      "Flags":  "Property, ReadOnly, NotModified, NullValue",
+                                      "IsValueModified":  false
+                                  },
+                                  {
+                                      "Name":  "ElementName",
+                                      "Value":  "",
+                                      "CimType":  14,
+                                      "Flags":  "Property, ReadOnly, NotModified",
+                                      "IsValueModified":  false
+                                  },
+                                  {
+                                      "Name":  "InstanceID",
+                                      "Value":  "MSFT|FW|FirewallProfile|Domain",
+                                      "CimType":  14,
+                                      "Flags":  "Property, Key, ReadOnly, NotModified",
+                                      "IsValueModified":  false
+                                  },
+                                  {
+                                      "Name":  "AllowInboundRules",
+                                      "Value":  2,
+                                      "CimType":  4,
+                                      "Flags":  "Property, NotModified",
+                                      "IsValueModified":  false
+                                  },
+                                  {
+                                      "Name":  "AllowLocalFirewallRules",
+                                      "Value":  2,
+                                      "CimType":  4,
+                                      "Flags":  "Property, NotModified",
+                                      "IsValueModified":  false
+                                  },
+                                  {
+                                      "Name":  "AllowLocalIPsecRules",
+                                      "Value":  2,
+                                      "CimType":  4,
+                                      "Flags":  "Property, NotModified",
+                                      "IsValueModified":  false
+                                  },
+                                  {
+                                      "Name":  "AllowUnicastResponseToMulticast",
+                                      "Value":  2,
+                                      "CimType":  4,
+                                      "Flags":  "Property, NotModified",
+                                      "IsValueModified":  false
+                                  },
+                                  {
+                                      "Name":  "AllowUserApps",
+                                      "Value":  2,
+                                      "CimType":  4,
+                                      "Flags":  "Property, NotModified",
+                                      "IsValueModified":  false
+                                  },
+                                  {
+                                      "Name":  "AllowUserPorts",
+                                      "Value":  2,
+                                      "CimType":  4,
+                                      "Flags":  "Property, NotModified",
+                                      "IsValueModified":  false
+                                  },
+                                  {
+                                      "Name":  "DefaultInboundAction",
+                                      "Value":  0,
+                                      "CimType":  4,
+                                      "Flags":  "Property, NotModified",
+                                      "IsValueModified":  false
+                                  },
+                                  {
+                                      "Name":  "DefaultOutboundAction",
+                                      "Value":  0,
+                                      "CimType":  4,
+                                      "Flags":  "Property, NotModified",
+                                      "IsValueModified":  false
+                                  },
+                                  {
+                                      "Name":  "DisabledInterfaceAliases",
+                                      "Value":  "NotConfigured",
+                                      "CimType":  30,
+                                      "Flags":  "Property, NotModified",
+                                      "IsValueModified":  false
+                                  },
+                                  {
+                                      "Name":  "Enabled",
+                                      "Value":  0,
+                                      "CimType":  4,
+                                      "Flags":  "Property, NotModified",
+                                      "IsValueModified":  false
+                                  },
+                                  {
+                                      "Name":  "EnableStealthModeForIPsec",
+                                      "Value":  2,
+                                      "CimType":  4,
+                                      "Flags":  "Property, NotModified",
+                                      "IsValueModified":  false
+                                  },
+                                  {
+                                      "Name":  "LogAllowed",
+                                      "Value":  0,
+                                      "CimType":  4,
+                                      "Flags":  "Property, NotModified",
+                                      "IsValueModified":  false
+                                  },
+                                  {
+                                      "Name":  "LogBlocked",
+                                      "Value":  0,
+                                      "CimType":  4,
+                                      "Flags":  "Property, NotModified",
+                                      "IsValueModified":  false
+                                  },
+                                  {
+                                      "Name":  "LogFileName",
+                                      "Value":  "%systemroot%\\system32\\LogFiles\\Firewall\\pfirewall.log",
+                                      "CimType":  14,
+                                      "Flags":  "Property, NotModified",
+                                      "IsValueModified":  false
+                                  },
+                                  {
+                                      "Name":  "LogIgnored",
+                                      "Value":  2,
+                                      "CimType":  4,
+                                      "Flags":  "Property, NotModified",
+                                      "IsValueModified":  false
+                                  },
+                                  {
+                                      "Name":  "LogMaxSizeKilobytes",
+                                      "Value":  4096,
+                                      "CimType":  8,
+                                      "Flags":  "Property, NotModified",
+                                      "IsValueModified":  false
+                                  },
+                                  {
+                                      "Name":  "Name",
+                                      "Value":  "Domain",
+                                      "CimType":  14,
+                                      "Flags":  "Property, ReadOnly, NotModified",
+                                      "IsValueModified":  false
+                                  },
+                                  {
+                                      "Name":  "NotifyOnListen",
+                                      "Value":  1,
+                                      "CimType":  4,
+                                      "Flags":  "Property, NotModified",
+                                      "IsValueModified":  false
+                                  }
+                              ],
+    "CimSystemProperties":  {
+                                "Namespace":  "root/standardcimv2",
+                                "ServerName":  "DESKTOP-IL43F2D",
+                                "ClassName":  "MSFT_NetFirewallProfile",
+                                "Path":  null
+                            },
+    "Profile":  "Domain",
+    "Enabled":  0,
+    "DefaultInboundAction":  0,
+    "DefaultOutboundAction":  0,
+    "AllowInboundRules":  2,
+    "AllowLocalFirewallRules":  2,
+    "AllowLocalIPsecRules":  2,
+    "AllowUserApps":  2,
+    "AllowUserPorts":  2,
+    "AllowUnicastResponseToMulticast":  2,
+    "NotifyOnListen":  1,
+    "EnableStealthModeForIPsec":  2,
+    "LogMaxSizeKilobytes":  4096,
+    "LogAllowed":  0,
+    "LogBlocked":  0,
+    "LogIgnored":  2,
+    "Caption":  null,
+    "Description":  null,
+    "ElementName":  "",
+    "InstanceID":  "MSFT|FW|FirewallProfile|Domain",
+    "DisabledInterfaceAliases":  [
+                                     "NotConfigured"
+                                 ],
+    "LogFileName":  "%systemroot%\\system32\\LogFiles\\Firewall\\pfirewall.log",
+    "Name":  "Domain",
+    "PSComputerName":  null
+}

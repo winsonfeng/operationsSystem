@@ -1,5 +1,11 @@
 import changFreemem from './changFreemem';
+import filter from './myfilter';
+import cmd from './cmd';
+import openCmd from './openCmd';
 
 export {
-  changFreemem
+  changFreemem,
+  filter,
+  cmd,
+  openCmd
 }

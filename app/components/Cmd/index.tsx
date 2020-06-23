@@ -4,7 +4,7 @@ import routes from '../../constants/routes.json'
 import { platform } from 'os';
 import { changFreemem } from '../public';
 import './index.css'
-import firewall from './Firewall'
+
 
 const os = require('os');
 const fs = require('fs');
@@ -95,7 +95,6 @@ class Index extends React.Component<any, any> {
   //这里要在componentDidMount调用方法，不能在render中调用,不然会无限循环渲染，
   // 实测用ReactHooks不行，所以才用了原生的React.Component
   componentDidMount() {
-    firewall()
     this.cmd();
   }
 

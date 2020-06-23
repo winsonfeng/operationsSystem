@@ -1,0 +1,17 @@
+.frame header {
+  height: 100px;
+}
+.frame header a {
+  margin-left: 20px;
+}
+.frame section {
+  height: calc(100vh - 120px);
+  overflow-y: scroll;
+}
+.frame footer {
+  position: fixed;
+  height: 20px;
+  bottom: 0;
+}
+
+/*# sourceMappingURL=index.css.map */

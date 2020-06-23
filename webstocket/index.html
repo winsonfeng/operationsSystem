@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<input onclick="wsLink()">
+<script>
+  function wsLink() {
+
+    let socket = new WebSocket('ws://localhost:8888');
+    debugger
+    console.log(socket)
+    socket.onopen = function(event) {
+      console.log(event, 'connect');
+      socket.send('牛逼呀，这是客户端发给你的');
+    };
+    socket.onmessage = function(mes) {
+      console.log(mes);
+    };
+  }
+</script>
+</body>
+</html>
