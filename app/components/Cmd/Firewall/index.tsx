@@ -66,6 +66,7 @@ class Firewall extends React.Component<any, any> {
           }
         });
         this.getFireLogFromCmd();
+
       });
     }
   }
@@ -95,7 +96,6 @@ class Firewall extends React.Component<any, any> {
 
   componentDidMount() {
     this.getFireLogFromCmd();
-
   }
 
   render() {

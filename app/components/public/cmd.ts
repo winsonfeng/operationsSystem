@@ -41,7 +41,7 @@ export default function(myBaseUrl: string, fileName: string) {
         })
       })*/
       let data = fs.readFileSync(urlInfo, { encoding: 'utf8' });
-      return data.toString().replace(/\r\n/g, '<br />');
+      return data.toString().replace(/\n/g, '<br />');
 
     };
     // spawn cmd

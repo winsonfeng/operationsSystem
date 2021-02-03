@@ -1,6 +1,7 @@
 export default function(myBaseUrl: string, fileName: string) {
 
   /*
+  @param 执行一个bat脚本文件
   @param myBaseUrl 自定义存储读取cmd文件以及log文件的路径。示例path.join(__dirname, 'components', 'Cmd', 'Firewall')
   @param fileName 自定义log日志文件名
  */

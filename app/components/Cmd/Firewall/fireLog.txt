@@ -1,7 +1,7 @@
 
 
 Name                            : Domain
-Enabled                         : False
+Enabled                         : True
 DefaultInboundAction            : NotConfigured
 DefaultOutboundAction           : NotConfigured
 AllowInboundRules               : NotConfigured
